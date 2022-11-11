@@ -7,6 +7,7 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import {
     BrowserRouter as Router,
+    HashRouter,
     Route,
     Routes,
     Navigate,
@@ -28,20 +29,20 @@ function App() {
     }, []);
 
     return (
-        <Router>
+        <HashRouter basename="/">
             <Preloader load={load} />
             <div className="App" id={load ? "no-scroll" : "scroll"}>
                 <Navbar />
                 <ScrollToTop />
                 <Routes>
-                    <Route exact path="/" element={<Home />} />
+                    <Route path="/" element={<Home />} />
                     <Route path="/project" element={<Projects />} />
                     <Route path="/about" element={<About />} />
                     <Route path="*" element={<Navigate to="/" />} />
                 </Routes>
                 <Footer />
             </div>
-        </Router>
+        </HashRouter>
     );
 }
 

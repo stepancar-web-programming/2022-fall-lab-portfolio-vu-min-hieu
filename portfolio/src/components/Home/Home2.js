@@ -8,7 +8,7 @@ function Home2() {
         <Container fluid className="home-about-section" id="about">
             <Container>
                 <Row>
-                    <Col md={4} className="myAvatar">
+                    <Col md={4} className="myAvtar">
                         <Tilt>
                             <img
                                 src={myImg}

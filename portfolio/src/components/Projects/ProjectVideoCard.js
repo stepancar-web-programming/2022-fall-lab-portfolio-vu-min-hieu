@@ -17,6 +17,12 @@ function ProjectVideoCard(props) {
                     width={"100%"}
                 />
             </div>
+            {/* <iframe
+                src="https://drive.google.com/file/d/1XpnG_UG2GQ2Kyty14_ILzP3U1j_zAqae/preview"
+                width={"100%"}
+                height={"100%"}
+                allow="autoplay"
+            ></iframe> */}
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Text style={{ textAlign: "justify" }}>
